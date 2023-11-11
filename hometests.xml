@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Tests Suite">
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.neetgramming.tests.HomeTests"/>
+        </classes>
+    </test>
+</suite>
