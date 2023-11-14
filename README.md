@@ -39,16 +39,17 @@ __*Please Note : This is an on-going project*__
 ### 2. Run a test
 
 #### Prerequisites:
-
-    * Install Safari, Chrome and Firefox browsers
-    * To run on safari;
-        * enable developer settings on safari browser
-        * run this cmd on terminal: `sudo safaridriver --enable`
+* Install Safari, Chrome and Firefox browsers 
+* To run on safari; 
+  * enable developer settings on safari browser 
+  * run this cmd on terminal: `sudo safaridriver --enable`
 
 #### Test Suites:
+* Run smoke.xml (chrome only) : 
+* Run regression.xml (chome & firefox) : 
+* Run functional.xml (safari, chome & firefox) : `mvn test`
 
-      * Run smoke.xml - safari, chrome & safari 
-      * Run regression.xml - safari, chome & firefox
-      * Run functional.xml - chrome only
+#### Checking reports:
+* View emailable-report.html in target folder on browser 
 
   

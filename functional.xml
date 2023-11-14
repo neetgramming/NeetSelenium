@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Home Tests Suite">
-    <test name="Functional Tests">
+<suite name="Home Functional Tests Suite">
+    <test name="Chrome Tests">
+        <parameter name="browserName" value="chrome"/>
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
         <classes>
-            <class name="com.neetgramming.tests.HomeTests"/>
+            <class name="com.neetgramming.tests.HomeTests">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="browserName" value="firefox"/>
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.neetgramming.tests.HomeTests">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Safari Tests">
+        <parameter name="browserName" value="safari"/>
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.neetgramming.tests.HomeTests">
+            </class>
         </classes>
     </test>
 </suite>
