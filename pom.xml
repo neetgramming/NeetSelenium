@@ -23,7 +23,8 @@
                 <version>3.2.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>functional.xml</suiteXmlFile>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
