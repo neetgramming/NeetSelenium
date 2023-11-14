@@ -1,4 +1,4 @@
-# Selenium Automation :
+# Selenium Automation
 
 __*Please Note : This is an on-going project*__
 
@@ -8,47 +8,45 @@ __*Please Note : This is an on-going project*__
 * **Java:** OOP Concepts usage
 * **Selenium:** Selenium 4, WebDriverManager, Elements, xpath, PageFactory
 * **Page Object Model:** Clear separation of tests and pages
-* **TestNG:** Cross-browser testing, groups, hard assert vs. soft assert
+* **TestNG:** Cross-browser testing, groups, hard assert vs. soft assert, reports generation
 
 ## Prerequisites
 
-### 1. Install java
+### 1. Install latest java version
 
-1. [x] Download and install java
-2. [x] Set up JAVA_HOME
-    * Mac:
-    * Windows:
-3. [x] Verify Java set up
+1. [x] https://www.oracle.com/java/technologies/downloads/
 
 ### 2. Install Apache Maven
 
-1. [x] Download and install maven
-2. [x] Set up MAVEN_HOME
-    * Mac:
-    * Windows:
-3. [x] Verify Maven set up
+1. [x] https://maven.apache.org/install.html
 
 ### 3. Install IntelliJ IDEA
+
+1. [X] https://www.jetbrains.com/idea/download/?section=mac
+
+### 4. Install at least one of the browsers: Safari, Chrome and Firefox
 
 ## Steps
 
 ### 1. Build the project
 
-* Terminal: `mvn clean install -DskipTests`
+* Run on terminal: `mvn clean install -DskipTests`
 
-### 2. Run a test
+### 2. Run tests
 
 #### Prerequisites:
+* To run on safari; 
+  * enable developer settings on safari browser 
+  * run this command on terminal: `sudo safaridriver --enable`
 
-    * Install Safari, Chrome and Firefox browsers
-    * To run on safari;
-        * enable developer settings on safari browser
-        * run this cmd on terminal: `sudo safaridriver --enable`
+#### Run Test Suites:
+* Run smoke.xml (chrome only) on terminal: `mvn test -DsuiteXmlFile=smoke.xml`
+* Run regression.xml (chome & firefox) on terminal : `mvn test -DsuiteXmlFile=regression.xml`
+* Run functional.xml (safari, chome & firefox) on terminal : `mvn test -DsuiteXmlFile=functional.xml`
 
-#### Test Suites:
-
-      * Run smoke.xml - safari, chrome & safari 
-      * Run regression.xml - safari, chome & firefox
-      * Run functional.xml - chrome only
-
-  
+#### View TestNG Reports:
+* TestNG Report:
+  * Open emailable-report.html in surefire-reports in target folder on browser 
+* Allure Report: (Run commands on terminal at poject location)
+  1. `allure generate --clean`
+  2. `allure open`
