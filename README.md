@@ -45,6 +45,8 @@ __*Please Note : This is an on-going project*__
 * Run functional.xml (safari, chome & firefox) on terminal : `mvn test -DsuiteXmlFile=functional.xml`
 
 #### View TestNG Reports:
-* Open emailable-report.html in surefire-reports in target folder on browser 
-
-  
+* TestNG Report:
+  * Open emailable-report.html in surefire-reports in target folder on browser 
+* Allure Report: (Run commands on terminal at poject location)
+  1. `allure generate --clean`
+  2. `allure open`
