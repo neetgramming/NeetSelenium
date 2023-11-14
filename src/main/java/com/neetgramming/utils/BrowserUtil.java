@@ -25,7 +25,7 @@ public class BrowserUtil {
 
     public static WebDriver setupBrowser(String browserName) {
         if (browserName == null)
-            setupBrowser();
+            driver = setupBrowser();
         else {
             switch (browserName) {
                 case "chrome":

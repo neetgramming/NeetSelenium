@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    private WebDriver driver;
-    private By btnSignin = By.xpath("//*[text()='Sign in']");
+    private final WebDriver driver;
+    private final By btnSignin = By.xpath("//*[text()='Sign in']");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

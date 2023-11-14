@@ -3,7 +3,7 @@
 
 <suite name="Regression Test Suite">
     <test name="Chrome Tests">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="chrome"/>
         <groups>
             <run>
                 <include name="regression"/>
@@ -15,7 +15,7 @@
     </test>
 
     <test name="Firefox Tests">
-        <parameter name="browserName" value="firefox"></parameter>
+        <parameter name="browserName" value="firefox"/>
         <groups>
             <run>
                 <include name="regression"/>
