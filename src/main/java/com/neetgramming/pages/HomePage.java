@@ -5,18 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    private WebDriver driver;
-    private By btnSignin = By.xpath("//*[text()='Sign in']");
+    private final WebDriver driver;
+    private final By btnSignin = By.xpath("//*[text()='Sign in']");
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public String getHomePageTitle(){
+
+    public String getHomePageTitle() {
         return driver.getTitle();
     }
 
-    public String getHomeCurrentUrl(){
+    public String getHomeCurrentUrl() {
         return driver.getCurrentUrl();
     }
 

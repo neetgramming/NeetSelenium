@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite">
+    <test name="Chrome Tests">
+        <parameter name="browserName" value="chrome"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.neetgramming.tests.HomeTests"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="browserName" value="firefox"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.neetgramming.tests.HomeTests"/>
+        </classes>
+    </test>
+</suite>
